@@ -2,8 +2,11 @@
 Online Shopping Cart
 
 Front End - HTML5, CSS, JS
+
 Backend - PHP, MySQL 
+
 Server - Apache
+
 The backend is working fine.
 Front end is pending.
  
