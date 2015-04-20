@@ -1,0 +1,210 @@
+/* header style*/
+.header{
+    border-bottom: 1px solid #ccc;
+}
+
+/* banner style */
+.header .banner{
+    background-color: #3a3f43;
+    display: block;
+    height: 30px;
+}
+.header .banner .coupon{
+    float: left;
+    margin-left: 203px;
+}
+.header .banner .shortcuts{
+    box-sizing: border-box;
+    font-family: Helvetica,Arial, sans-serif;
+    float: right;
+    margin-right: 203px;
+    padding-top: 10px;
+}
+.header .banner .shortcuts a{
+    color: #fff;
+    display: inline;
+    float: left;
+    font-size: 12px;
+    line-height: 13px;
+    padding-right: 10px;
+    text-align: right;
+    text-decoration: none;
+    text-transform: uppercase;
+}
+.header .banner .shortcuts a:hover{
+    text-decoration: underline;
+}
+.login{
+    border-left: 1px solid #fff;
+    padding-left: 10px;
+}
+
+/* searchbar style */
+.header .searchbar{
+    box-sizing: border-box;
+    width: 960px;
+    font-size: 20px;
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 14px;
+    text-shadow: 0 0 1px rgba(0,0,0,.35);
+    display: block;
+    height: 60px;
+    margin: 0 auto;
+    padding: 23px 0 2px;
+    clear: both;
+}
+.header .searchbar .search{
+    width: 280px;
+    box-sizing: border-box;
+    margin: 0 auto;
+}
+.header .searchbar  .search> input{
+    float: left;
+}
+.header .searchbar  .search .searchsubmit{
+    margin: 0;
+}
+.header .searchbar .createaccount > a{
+
+    background-color: #0a3151;
+    text-decoration: none;
+    color: #fff;
+    border-radius: 3px;
+    width: 160px;
+    text-align: center;
+    float: right;
+    padding: 5px 3px;
+    display: inline-block;
+}
+.header .searchbar .createaccount > a:hover{
+    text-decoration: underline;
+}
+
+/* navbar style */
+.header .navbar{
+    clear: both;
+    box-sizing: border-box;
+    display: block;
+    height: 40px;
+    margin: 0 auto;
+    width: 960px;
+}
+.nav,
+.nav a,
+.nav ul,
+.nav li,
+.nav div,
+.nav form,
+.nav input {
+    margin: 0;
+    padding: 0;
+    border: none;
+    outline: none;
+}
+.nav a { text-decoration: none; }
+.nav {
+    display: inline-block;
+    position: relative;
+    cursor: default;
+    z-index: 500;
+}
+.nav > li {
+    display: block;
+    float: left;
+}
+.nav > li > a {
+    position: relative;
+    display: block;
+    z-index: 510;
+    height: 40px;
+    padding: 0 51px;
+    line-height: 44px;
+ 
+    font-family: Helvetica, Arial, sans-serif;
+    font-size: 13px;
+    color: #fcfcfc;
+	text-shadow: 0 0 1px rgba(0,0,0,.35);
+
+    background: #67b6eb;
+    border-left: 1px solid #F5F3EE;
+    border-right: 1px solid #F5F3EE;
+
+    -webkit-transition: all .3s ease;
+    -moz-transition: all .3s ease;
+    -o-transition: all .3s ease;
+    -ms-transition: all .3s ease;
+    transition: all .3s ease;
+}
+.nav > li:hover > a { 
+    box-sizing: border-box;
+	color: #fcfcfc;
+    background: #0a3151;
+    border-bottom: 4px solid #67BCDB;
+}
+ 
+.nav > li:first-child > a {
+    border-radius: 3px 0 0 3px;
+    border-left: none;
+}
+.nav > li > div {
+    position: absolute;
+    display: block;
+    width: 100%;
+    left: 0;
+ 
+    opacity: 0;
+    visibility: hidden;
+    overflow: hidden;
+ 
+    background: #ffffff;
+    border-left: 1px solid #ccc;
+    border-right: 1px solid #ccc;
+    border-bottom: 1px solid #ccc;
+    border-radius: 0 0 3px 3px;
+
+    box-shadow: 1px 1px 7px rgba(0,0,0,.8);
+    -webkit-box-shadow: 1px 1px 7px rgba(0,0,0,.8);
+    -moz-box-shadow: 1px 1px 7px rgba(0,0,0,.8);
+ 
+    -webkit-transition: all .3s ease .15s;
+    -moz-transition: all .3s ease .15s;
+    -o-transition: all .3s ease .15s;
+    -ms-transition: all .3s ease .15s;
+    transition: all .3s ease .15s;
+}
+.nav > li:hover > div {
+    opacity: 1;
+    visibility: visible;
+    overflow: visible;
+}
+.nav .nav-column {
+    float: left;
+    width: 20%;
+    padding: 2.5%;
+}
+ 
+.nav .nav-column h3 {
+    margin: 20px 0 10px 0;
+    line-height: 18px;
+ 
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    color: #0a3151;
+    text-transform: uppercase;
+}
+ 
+.nav .nav-column h3.orange { color: #ff722b; }
+.nav .nav-column li a {
+    display: block;
+    line-height: 26px;
+ 
+    font-family: Helvetica, Arial, sans-serif;
+    font-weight: bold;
+    font-size: 13px;
+    color: #888888;
+}
+ 
+.nav .nav-column li a:hover { color: #666666; }
+.main{
+}

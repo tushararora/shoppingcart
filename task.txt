@@ -1,0 +1,9 @@
+Tasks Remaining:
+
+	Important:
+    	1. Change the view of the tables.
+        2. Add duplicate entry checks everywhere.
+    
+    
+    !Important:
+		1. Add all the categories and subcategories in the db.

@@ -1,0 +1,38 @@
+ <tr>
+            <td class="text">Image</td>
+            <td><input type="file" class="text-box-1" name="product-image1" />
+			</td>
+            <td><input type="file" class="text-box-1" name="product-image2" /> 
+            </td>
+            <td><input type="file" class="text-box-1" name="product-image3" />
+			</td>
+            </tr>
+            <tr>
+            <td class="text">Color</td><td><input type="text" class="text-box-1" name="product-color" 
+            value="<?php if(isset($_GET['do']) and $_GET['do']=="editProduct"){ echo $row['product_color'];}?>" >
+			</td>
+            </tr>
+            
+            $productImg=array();
+            if(isset($_FILES['product-image1']['tmp_name'])) 
+				$productImg[]=imageUpload('product-image1');
+			if(isset($_FILES['product-image2']['tmp_name'])) 
+				$productImg[]=imageUpload('product-image2');
+			if(isset($_FILES['product-image3']['tmp_name'])) 
+				$productImg[]=imageUpload('product-image3');
+            $productImage=implode(',',$productImg);
+            
+            $productColor=$_POST['product-color'];
+            
+            if(empty($productImage)){
+			$msg="Please fill the Image";
+			$_SESSION['msg']=$msg;
+			header("Location:../product-man.php?do=addNewProduct");die;
+			}
+			if(empty($productColor)){
+			$msg="Please fill the Color";
+			$_SESSION['msg']=$msg;
+			header("Location:../product-man.php?do=addNewProduct");die;
+			}
+            
+  
